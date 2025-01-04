@@ -1,0 +1,571 @@
+@font-face {
+    font-family: "Oswald";
+    font-weight: 600;
+    src: url(/font/Oswald.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    width: 1920px;
+    height: 115px;
+    font-family: "Oswald";
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    background-color: rgb(0, 0, 0); 
+    .header-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .logo {
+            height: 44px;
+            margin-left: 10px;
+        }
+        .navbar {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            .nav-logo {
+                display: flex;
+                gap: 10px;
+                .beta {
+                    display: flex;
+                    position: relative;
+                    bottom: 10px;
+                    padding-bottom: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 15px;
+                    width: 100px;
+                    height: 29px;
+                    color: white;
+                    padding: 5px;
+                    border: 1px #FFF solid;
+                    margin-bottom: 0;
+                    font-family: "Roboto", sans-serif;
+                    cursor: progress;
+                }
+            }
+            .header-links {
+                display: flex;
+                padding-left: 390px;
+                margin: 0;
+                .contact {
+                    width: 100px;
+                    height: 28px;
+                    margin-right: 7px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .contact:hover {
+                    border-bottom: solid 2px red;
+                    transition-property: border-bottom;
+                    transition-duration: 0.6s, 0.5s;
+                }
+                .search {
+                    width: 90px;
+                    height: 28px;
+                    margin-right: 7px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .search-text {
+                        padding-right: 10px;
+                    }
+                }
+                .search:hover {
+                    border-bottom: solid 2px red;
+                    transition-property: border-bottom;
+                    transition-duration: 0.6s, 0.5s;
+                }
+                .div-link {
+                    width: 54px;
+                    height: 28px;
+                    margin-right: 7px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .div-link:hover {
+                    border-bottom: solid 2px red;
+                    transition-property: border-bottom;
+                    transition-duration: 0.6s, 0.5s;
+                }
+                .div-link:active {
+                    border-bottom: solid 2px red;
+                }
+                .div-link-home {
+                    width: 54px;
+                    height: 28px;
+                    margin-right: 7px;
+                    border-bottom: solid 2px red;
+                    .header-item-home {
+                        display: flex;
+                        justify-content: center;
+                        list-style: none;
+                        .header-link {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+                .header-item {
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    .header-link {
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+            .header-options {
+                width: 25%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                .acc-links {
+                    margin-right: 29px;
+                }
+                .shop-link {
+                    text-decoration: none;
+                    color: white;
+                    font-family: "Roboto Medium";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    letter-spacing: 0.12px;
+                }
+                .shop-icon {
+                    margin-right: 11px;
+                    width: 20px;
+                    height: 30px;
+                }
+                .like {
+                    margin-right: 18px;
+                    width: 30px;
+                    height: 28px;
+                }
+                .popup-link {
+                    text-decoration: none;
+                    margin-right: 10px;
+                    color: white;
+                }
+            }
+        }    
+    }
+}
+.main {
+    font-family: "Oswald", sans-serif;
+    width: auto;
+    .main-info {
+        display: flex;
+        margin-top: 60px;
+        .dress-position {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-right: 15px;
+            button {
+                border: none;
+                img {
+                    padding: 3px;
+                }
+            }
+            button:focus {
+                border: solid 2px black;
+            }
+        }
+        .dress-content {
+            display: flex;
+            gap: 75px;
+            .dress-img {
+                display: flex;
+                flex-direction: column;
+                .share {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 60px;
+                    .share-content {
+                    display: flex;
+                    justify-content: center;
+                    gap: 13px;
+                    .share-heading {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            }
+            .dress-info {
+                .product-bag__buttons {
+                    display: flex;
+                    width: 460px;
+                    gap: 19px;
+                    margin-top: 36px;
+                    button {
+                        width: 221px;
+                        height: 50px;
+                    }
+                    .add {
+                        background-color: #000;
+                        color: white;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                    .save {
+                        border: solid 2px #C4C4C4;
+                        font-family: "Oswald", sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                    }
+                }
+                .product-info {
+                    display: flex;
+                    gap: 16px;
+                    margin-top: 11px;
+                    div {
+                        display: flex;
+                        justify-content: center;
+                        align-self: center;
+                        height: 18px;
+                    }
+                    p {
+                        margin-bottom: 0;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        color: #828282;
+                    }
+                }
+                .dress-heading {
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 500;
+                }
+                .dress-img {
+                    height: auto;
+                }
+           .full-price {
+            display: flex;
+            gap: 24px;
+            margin-top: 37px;
+            .price {
+                .price-total-heading {
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+            }
+            .quanity-info {
+                .quanity-heading {
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+                .quanity-buttons {
+                    height: 44px;
+                display: flex;
+                border: 1px solid #C4C4C4;
+                background: #FFF;
+                align-items: center;
+                .minus {
+                    width: 44px;
+                }
+                .plus {
+                    width: 44px;
+                }
+                button {
+                    border: none;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+                }
+            }
+        }
+        
+        .size {
+            .headind {
+                display: flex;
+                justify-content: space-between;
+                width: 549px;
+                .heading-text {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                }
+            }
+            .filterWithSize {
+                display: flex;
+                width: 549px;
+                flex-direction: column;
+                margin-top: 15px;
+                gap: 10px;
+                .SizeList {
+                    display: flex;
+                    gap: 10px;
+                    .SizeList__button {
+                        width: 46px;
+                        height: 46px;
+                        font-size: 14px;
+                        font-family: "Oswald", sans-serif;
+                        text-align: center;
+                        font-style: normal;
+                        font-weight: 400;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: #C4C4C4;
+                        color: #828282;
+                    }
+                }
+                    .SizeList__button:focus {
+                        color: #000;
+                        border-color: #000;
+                        border-width: 3px;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    .details {
+        p {
+            color: #3F3F3F;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+        }
+        .details-info {
+            display: flex;
+            flex-direction: column;
+            padding-right: 28px;
+            gap: 20px;
+            .details-heading {
+                display: flex;
+                width: 1186px;
+                height: 72px;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: solid 2px #C4C4C4;
+                button {
+                    border: none;
+                }
+            }
+            .details-content {
+                display: flex;
+                gap: 50px;
+                margin-top: 32px;
+                padding-right: 90px;
+                .details-infoHeading {
+                    font-family: "Oswald", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                .first-details-info {
+                    .about-details {
+                        width: 567px;
+                        height: 112px;
+                    }
+                    .advantages {
+                        .advantages-heading {
+                            font-family: "Oswald", sans-serif;
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                        .advantagesList {
+                            li {
+                                color: #3F3F3F;
+                                font-family: "Roboto", sans-serif;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .full-card__list {
+        display: flex;
+        margin-top: 60px;
+        justify-content: center;
+        .card-menu {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 60px;
+                .top__card-list {
+                    display: flex;
+                    margin-top: 30px;
+                    justify-content: space-between;
+                    .card-content {
+                        width: 354px;
+                        height: 550px;
+                        border: none;
+                        margin-left: 30px;
+                        .info-text {
+                            color: #BDBDBD;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 600;
+                            margin-bottom: 0;
+                            margin-top: 14px;
+                        }
+                        .card-info {
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 300;
+                            margin-bottom: 0;
+                        }
+                        .card-price {
+                            margin-top: 18px;
+                        }
+                    }
+                    .first-card {
+                        width: 354px;
+                        height: 550px;
+                        border: none;
+                        .info-text {
+                            color: #BDBDBD;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 600;
+                            margin-bottom: 0;
+                            margin-top: 14px;
+                        }
+                        .card-info {
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 300;
+                            margin-bottom: 0;
+                        }
+                        .card-price {
+                            margin-top: 18px;
+                        }
+                    }
+                }
+                .top-cards__heading-content {
+                    display: flex;
+                    justify-content: space-between;
+                .top-cards__heading {
+                  font-size: 24px;
+                  font-style: normal;
+                  font-weight: 400;
+                }
+            }
+        }
+    }
+    .advantages {
+        margin-top: 50px ;
+        .advantages-content {
+            width: 1515px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 150px;
+            margin-left: 210px;
+            .advantages-info {
+                display: flex;
+                height: 30px;
+                gap: 15px;
+                align-items: center;
+                .advantages-img {
+                    width: 30px;
+                    height: 30px;
+                }
+                .advantages-text {
+                    font-size: 14px;
+                    width: 190px;
+                    margin-bottom: 0;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+.footer {
+    height: 527px;
+    background-color: #000;
+    .contact-links {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .join-info {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        .info-links {
+            display: flex;
+            flex-direction: column;
+            padding-top: 40px;
+            gap: 5px;
+            .email {
+                width: 280px;
+                height: 40px;
+                background-color: transparent;
+                border: solid 2px white;
+                color: #FFF;
+                padding-left: 10px;
+            }
+            .footer-btn {
+                height: 40px;
+            }
+        }
+    }
+    .footer-content {
+       display: flex;
+       justify-content: space-between;
+       padding-top: 65px;
+       .footer-info {
+        display: flex;
+        flex-direction: column;
+        .info-heading {
+            color: white;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        .info-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .links {
+                display: flex;
+                height: 30px;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    } 
+    .footer-link {
+        color:  #828282;
+        font-family: "Roboto Medium";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    p {
+        color: white;
+        margin-bottom: 0;
+    }
+    }
+}
