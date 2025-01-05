@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/address.css">
+    <title>Address Book</title>
+</head>
+<body>
+    <header class="header container-fluid">
+        <div class="header-content">
+          <nav class="navbar">
+            <div class="nav-logo">
+              <a href="#"><img class="logo" src="/img/Logo.svg" alt="123"></a>
+              <p class="beta">BETA v0.9.1</p>
+            </div>
+              <ul class="header-links">
+                <div class="div-link">
+                  <li class="header-item"><a class="header-link" href="/index.html">HOME</a></li>
+                </div>
+                <div class="div-link">
+                  <li class="header-item"><a class="header-link" href="/catalog.html">SHOP</a></li>
+                </div>
+                <div class="div-link">
+                  <li class="header-item"><a class="header-link" href="/article.html">BLOG</a></li>
+                </div>
+                <div class="div-link">
+                  <li class="header-item"><a class="header-link" href="#">SALE</a></li>
+                </div>
+                <div class="contact">
+                  <li class="header-item"><a class="header-link" href="#">CONTACT US</a></li>
+                </div>
+                <div class="search">
+                  <li class="header-item"><a class="header-link" href="#"><img class="search-text" src="./img/Search.svg" alt="">SEARCH</a></li>
+                </div>
+              </ul>
+              <div class="header-options">
+                <div class="acc-links">
+                  <a class="popup-link" href="#">SIGN IN</a>
+                  <a class="popup-link" href="/create-account.html">CREATE  AN  ACCOUNT</a>
+                </div>
+                <a class="like" href="#"><img src="/img/Like.svg" alt="1"></a>
+                <a class="shop-icon" href="#"><img src="/img/Shop.svg" alt="2"></a>
+                <a class="shop-link" href="#">Shopping Cart <br> 0,00 EUR</a>
+              </div>
+            </nav>
+            </div>
+      </header>
+      <main class="main">
+        <div class="link">
+            <p class="link-text">Home / Create New Customer Account</p>
+        </div>
+        <div class="main-h1 container-sm">
+          <h1 class="h1">Add New Address</h1>
+        </div>
+        <div class="contact-us">
+            <a href="#" class="contact-link">contact us</a>
+        </div>
+        <section class="address-section container-sm">
+            <div class="info">
+                <div class="links">
+                  <a class="info-link" href="#">Account Dashboard</a>
+                  <a class="info-link" href="/create-account.html">Account Information</a>
+                  <a class="address-link" href="#">Address Book</a>
+                  <a class="info-link" href="#">My Orders</a>
+                  <a class="info-link" href="#">My Wishlist</a>
+                  <a class="info-link" href="#">Newsletter Subscritions</a>
+                </div>
+                <div class="address-regist">
+                <form action="" method="post" class="form">
+                    <div class="contact-info">
+                        <h4 class="post-heading">Contact Information</h4>
+                        <div class="contact-regist">
+                            <div class="field">
+                                <p class="field-propmt">First Name <u class="text-decoration-none star">*</u></p>
+                                <label for="input" class="label"><input type="text" placeholder="Alex" name="" id="firstName" class="input"></label>
+                            </div>
+                            <div class="field">
+                                <p class="field-propmt">Last Name <u class="text-decoration-none star">*</u></p>
+                                <label for="input" class="label"><input type="text" placeholder="Driver" name="" id="lastName" class="input"></label>
+                            </div>
+                            <div class="field">
+                                <p class="field-propmt">Company</p>
+                                <label for="input" class="label"><input type="text" name="" id="Company" class="input"></label>
+                            </div>
+                            <div class="field">
+                                <p class="field-propmt">Phone Number <u class="text-decoration-none star">*</u></p>
+                                <label for="input" class="label"><input type="tel" name="" id="phone" class="input"></label>
+                            </div>
+                            <div class="field">
+                                <p class="field-propmt">Fax <u class="text-decoration-none star">*</u></p>
+                                <label for="input" class="label"><input type="text" name="" id="fax" class="input"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address"></div>
+                </form>
+            </div> 
+            </div>   
+        </section>
+      </main>
+</body>
+</html>

@@ -1,0 +1,418 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: 600;
+  src: url(/font/Oswald.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1920px;
+  height: 115px;
+  font-family: "Oswald";
+  font-size: 14px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(0, 0, 0);
+}
+header .header-content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-content .logo {
+  height: 44px;
+  margin-left: 10px;
+}
+header .header-content .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .header-content .navbar .nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+header .header-content .navbar .nav-logo .beta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  bottom: 10px;
+  padding-bottom: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  width: 100px;
+  height: 29px;
+  color: white;
+  padding: 5px;
+  border: 1px #FFF solid;
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  cursor: progress;
+}
+header .header-content .navbar .header-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 390px;
+  margin: 0;
+}
+header .header-content .navbar .header-links .contact {
+  width: 100px;
+  height: 28px;
+  margin-right: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .header-content .navbar .header-links .contact:hover {
+  border-bottom: solid 2px red;
+  -webkit-transition-property: border-bottom;
+  transition-property: border-bottom;
+  -webkit-transition-duration: 0.6s, 0.5s;
+          transition-duration: 0.6s, 0.5s;
+}
+header .header-content .navbar .header-links .search {
+  width: 90px;
+  height: 28px;
+  margin-right: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .header-content .navbar .header-links .search .search-text {
+  padding-right: 10px;
+}
+header .header-content .navbar .header-links .search:hover {
+  border-bottom: solid 2px red;
+  -webkit-transition-property: border-bottom;
+  transition-property: border-bottom;
+  -webkit-transition-duration: 0.6s, 0.5s;
+          transition-duration: 0.6s, 0.5s;
+}
+header .header-content .navbar .header-links .div-link {
+  width: 54px;
+  height: 28px;
+  margin-right: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .header-content .navbar .header-links .div-link:hover {
+  border-bottom: solid 2px red;
+  -webkit-transition-property: border-bottom;
+  transition-property: border-bottom;
+  -webkit-transition-duration: 0.6s, 0.5s;
+          transition-duration: 0.6s, 0.5s;
+}
+header .header-content .navbar .header-links .div-link:active {
+  border-bottom: solid 2px red;
+}
+header .header-content .navbar .header-links .div-link-home {
+  width: 54px;
+  height: 28px;
+  margin-right: 7px;
+  border-bottom: solid 2px red;
+}
+header .header-content .navbar .header-links .div-link-home .header-item-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+header .header-content .navbar .header-links .div-link-home .header-item-home .header-link {
+  text-decoration: none;
+  color: white;
+}
+header .header-content .navbar .header-links .header-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+header .header-content .navbar .header-links .header-item .header-link {
+  text-decoration: none;
+  color: white;
+}
+header .header-content .navbar .header-options {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+header .header-content .navbar .header-options .acc-links {
+  margin-right: 29px;
+}
+header .header-content .navbar .header-options .shop-link {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto Medium";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}
+header .header-content .navbar .header-options .shop-icon {
+  margin-right: 11px;
+  width: 20px;
+  height: 30px;
+}
+header .header-content .navbar .header-options .like {
+  margin-right: 18px;
+  width: 30px;
+  height: 28px;
+}
+header .header-content .navbar .header-options .popup-link {
+  text-decoration: none;
+  margin-right: 10px;
+  color: white;
+}
+
+.main .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 13px;
+}
+.main .link .link-text {
+  color: #828282;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  margin: 0;
+}
+.main .main-h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 13px;
+  height: 90px;
+}
+.main .main-h1 .h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 68px;
+}
+.main .contact-us {
+  position: fixed;
+  right: 0;
+  top: 25%;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+  width: 40px;
+  height: 200px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.main .contact-us .contact-link {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.main .address-section {
+  height: 1039px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 17px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid var(--Divider, #C4C4C4);
+}
+.main .address-section .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 924px;
+  padding-top: 73px;
+  gap: 108px;
+}
+.main .address-section .info .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 275px;
+  height: 264px;
+}
+.main .address-section .info .links .address-link {
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.main .address-section .info .links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 288px;
+  height: 44px;
+  text-decoration: none;
+  color: #828282;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 23px;
+}
+.main .address-section .info .links a:hover {
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.main .address-section .address-regist form .contact-info h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.main .address-section .address-regist form .contact-info .contact-regist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  margin-top: 28px;
+}
+.main .address-section .address-regist form .contact-info .contact-regist .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 41px;
+  width: 550px;
+  height: 44px;
+}
+.main .address-section .address-regist form .contact-info .contact-regist .field p {
+  width: 127px;
+  color: #3F3F3F;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+  font-weight: 400;
+}
+.main .address-section .address-regist form .contact-info .contact-regist .field p u {
+  color: red;
+}
+.main .address-section .address-regist form .contact-info .contact-regist .field .input {
+  width: 392px;
+  height: 44px;
+  border: 1px solid var(--Divider, #C4C4C4);
+}

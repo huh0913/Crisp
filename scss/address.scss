@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family:  "Oswald", sans-serif;
 }
 header {
     display: flex;
@@ -161,8 +162,7 @@ header {
         }    
     }
 }
-main {
-    font-family:  "Oswald", sans-serif;
+.main {
     .link {
         display: flex;
         height: 36px;
@@ -220,15 +220,15 @@ main {
             color: white;
         }
     }
-    .content {
-        height: 716px;
+    .address-section {
+        height: 1039px;
         display: flex;
         margin-top: 17px;
         justify-content: center;
         border: 1px solid var(--Divider, #C4C4C4);
         .info {
             display: flex;
-            width: 1045px;
+            width: 924px;
             padding-top: 73px;
             gap: 108px;
             .links {
@@ -236,171 +236,77 @@ main {
                 flex-direction: column;
                 width: 275px;
                 height: 264px;
-                .dashboard-link {
+                .address-link {
                     color: #000;
                     font-family: "Oswald", sans-serif;
-                    font-size: 18px;
+                    font-size: 19px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 24px;
                 }
                 a {
+                    display: flex;
+                    align-items: center;
                     width: 288px;
                     height: 44px;
                     text-decoration: none;
                     color: #828282;
-                    font-family: "Roboto", sans-serif;
+                    font-family: "Oswald", sans-serif;
                     font-size: 18px;
                     font-weight: 200;
                     line-height: 23px;
                 }
+                a:hover {
+                    color: #000;
+                    font-family: "Oswald", sans-serif;
+                    font-size: 19px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
             }
-            .account-content {
-                display: flex;
-                flex-direction: column;
-                gap: 64px;
-                .account-info {
-                    .account-actions {
+        }  
+        .address-regist {
+            form {
+                .contact-info {
+                    h4 {
+                        font-family: "Oswald", sans-serif;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                    }
+                    .contact-regist {
                         display: flex;
-                        margin-top: 29px;
-                        gap: 30px;
-                        .action-info {
+                        flex-direction: column;
+                        gap: 15px;
+                        margin-top: 28px;
+                        .field {
                             display: flex;
-                            flex-direction: column;
-                            gap: 11px;
-                            width: 316px;
-                            height: 140px;
-                            h4 {
-                                color: var(--Black-2, #3F3F3F);
-                                font-family: "Oswald", sans-serif;
-                                font-size: 18px;
-                                font-style: normal;
-                                font-weight: 500;
-                                line-height: normal;
-                                letter-spacing: 0.5px;
-                                text-transform: uppercase;
-                            }
+                            justify-content: space-between;
+                            gap: 41px;
+                            width: 550px;
+                            height: 44px;
                             p {
-                                margin-bottom: 0;
-                                color: #828282;
+                                width: 127px;
+                                color: #3F3F3F;
                                 font-family: "Roboto", sans-serif;
                                 font-size: 16px;
                                 font-style: normal;
+                                line-height: 20px; 
                                 font-weight: 400;
-                                line-height: 20px;
+                                u {
+                                    color: red;
+                                }
                             }
-                            button {
-                                color: var(--Black, #000);
-                                text-align: center;
-                                font-family: "Oswald", sans-serif;
-                                font-size: 14px;
-                                font-style: normal;
-                                font-weight: 600;
-                                line-height: 20px;
+                            .input {
+                                width: 392px;
+                                height: 44px;
+                                border: 1px solid var(--Divider, #C4C4C4);
                             }
                         }
                     }
                 }
             }
-        }
-    }
-    .advantages {
-        margin-top: 73px;
-        .advantages-content {
-            width: 1515px;
-            height: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 150px;
-            margin-left: 210px;
-            .advantages-info {
-                display: flex;
-                height: 30px;
-                gap: 15px;
-                align-items: center;
-                .advantages-img {
-                    width: 30px;
-                    height: 30px;
-                }
-                .advantages-text {
-                    font-size: 14px;
-                    width: 190px;
-                    margin-bottom: 0;
-                    font-style: normal;
-                    font-weight: 400;
-                }
-            }
-        }
-    }
-}
-.footer {
-    height: 527px;
-    background-color: #000;
-    .contact-links {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-    .join-info {
-        display: flex;
-        flex-direction: column;
-        width: 280px;
-        .info-links {
-            display: flex;
-            flex-direction: column;
-            padding-top: 40px;
-            gap: 5px;
-            .email {
-                width: 280px;
-                height: 40px;
-                background-color: transparent;
-                border: solid 2px white;
-                color: #FFF;
-                padding-left: 10px;
-            }
-            .footer-btn {
-                height: 40px;
-            }
-        }
-    }
-    .footer-content {
-       display: flex;
-       justify-content: space-between;
-       padding-top: 65px;
-       .footer-info {
-        display: flex;
-        flex-direction: column;
-        .info-heading {
-            color: white;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 600;
-            margin-bottom: 40px;
-        }
-        .info-links {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            .links {
-                display: flex;
-                height: 30px;
-                align-items: center;
-                gap: 10px;
-            }
-        }
-    } 
-    .footer-link {
-        color:  #828282;
-        font-family: "Roboto Medium";
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        text-decoration: none;
-    }
-    p {
-        color: white;
-        margin-bottom: 0;
-    }
+        } 
     }
 }
