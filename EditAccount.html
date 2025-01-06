@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/address.css">
-    <title>Address Book</title>
+    <link rel="stylesheet" href="/css/EditAccount.css">
+    <title>Your Account</title>
 </head>
 <body>
     <header class="header container-fluid">
@@ -49,7 +49,7 @@
       </header>
       <main class="main">
         <div class="link">
-            <p class="link-text">Home / Create New Customer Account</p>
+            <p class="link-text">Home / My Dashboard</p>
         </div>
         <div class="main-h1 container-sm">
           <h1 class="h1">Add New Address</h1>
@@ -57,112 +57,74 @@
         <div class="contact-us">
             <a href="#" class="contact-link">contact us</a>
         </div>
-        <section class="address-section container-sm">
+        <section class="account-section container-sm">
             <div class="info">
                 <div class="links">
-                  <a class="info-link" href="#">Account Dashboard</a>
-                  <a class="info-link" href="#">Account Information</a>
-                  <a class="address-link" href="#">Address Book</a>
-                  <a class="info-link" href="#">My Orders</a>
-                  <a class="info-link" href="#">My Wishlist</a>
-                  <a class="info-link" href="#">Newsletter Subscritions</a>
+                    <a class="info-link" href="#">Account Dashboard</a>
+                    <a class="account-link" href="#">Account Information</a>
+                    <a class="info-link" href="/address.html">Address Book</a>
+                    <a class="info-link" href="#">My Orders</a>
+                    <a class="info-link" href="#">My Wishlist</a>
+                    <a class="info-link" href="#">Newsletter Subscritions</a>
                 </div>
-                <div class="address-regist">
-                <form action="" method="post" class="form">
-                    <div class="contact-info">
-                        <h4 class="post-heading">Contact Information</h4>
-                        <div class="contact-regist">
-                            <div class="field">
-                                <p class="field-propmt">First Name <u class="text-decoration-none star">*</u></p>
-                                <label for="firstName" class="label"><input type="text" id="firstName" autocomplete="on" placeholder="Alex" name="input" class="input"></label>
-                            </div>
-                            <div class="field">
-                                <p class="field-propmt">Last Name <u class="text-decoration-none star">*</u></p>
-                                <label for="lastName" class="label"><input type="text" id="lastName" autocomplete="on" placeholder="Driver" name="input" class="input"></label>
-                            </div>
-                            <div class="field">
-                                <p class="field-propmt">Company</p>
-                                <label for="company" class="label"><input type="text" id="company" autocomplete="on" name="input" class="input"></label>
-                            </div>
-                            <div class="field">
-                                <p class="field-propmt">Phone Number <u class="text-decoration-none star">*</u></p>
-                                <label for="phone" class="label"><input type="tel" id="phone" autocomplete="on" name="input" class="input"></label>
-                            </div>
-                            <div class="field">
-                                <p class="field-propmt">Fax <u class="text-decoration-none star">*</u></p>
-                                <label for="fax" class="label"><input type="text" id="fax" autocomplete="on" name="input" class="input"></label>
-                            </div>
+                <form action="" method="post" class="regist-form">
+                    <div class="personal-info">
+                        <p class="personal-heading">Personal Information</p>
+                        <div class="name">
+                            <p class="Name-prompt">First Name <u>*</u></p>
+                        <label for="firstName">
+                           <input type="text" name="" id="firstName" placeholder="First Name">
+                        </label>
                         </div>
-                        <div class="address">
-                          <h4 class="post-heading">Address</h4>
-                      <div class="contact-regist">
-                        <div class="field">
-                          <p class="field-propmt">Street Address <u class="text-decoration-none star">*</u></p>
-                          <div class="street-address__inputs">
-                            <label for="firts-inputStreet"><input name="input" id="firts-inputStreet" type="text" class="input"></label>
-                            <label for="second-inputStreet"><input name="input" id="second-inputStreet" type="text" class="input"></label>
-                          </div>
-                        </div>
-                        <div class="field">
-                          <p class="field-propmt">Country <u class="text-decoration-none star">*</u></p>
-                          <label for="country">
-                            <select name="country" autocomplete="on" id="country" class="country-selection" required>
-                              <option value="engineer" selected>USA</option>
-                              <option value="scientist">Russia</option>
-                              <option value="psychologist">China</option>
-                              <option value="other">Other</option>
-                            </select>
-                          </label>
-                        </div>
-                        <div class="field">
-                          <p class="field-propmt">State/Province <u class="text-decoration-none star">*</u></p>
-                          <label for="state">
-                            <select name="state" id="state" class="country-selection" required>
-                              <option value="engineer" selected>Инженер</option>
-                              <option value="scientist">Учёный</option>
-                              <option value="psychologist">Психолог</option>
-                              <option value="other">Other</option>
-                            </select>
-                          </label>
-                        </div>
-                        <div class="field">
-                          <p class="field-propmt">Zip/Postal Code<u class="text-decoration-none star">*</u></p>
-                          <label for="zip">
-                            <input type="text" id="zip" class="input">
-                          </label>
-                        </div>
-                      </div>
+                        <div class="name">
+                           <p class="Name-prompt">Last Name <u>*</u></p>
+                        <label for="lastName">
+                           <input type="text" name="" id="lastName" placeholder="Last Name">
+                        </label>
                     </div>
-                    <button class="form-btn" type="menu">SAVE ADDRESS</button>
+                    <div class="change">
+                        <div class="check">
+                            <label for="4">
+                                <input type="checkbox" name="" id="4">
+                            </label>
+                            <p class="text">Change Email</p>
+                        </div>
+                        <div class="check">
+                            <label for="5">
+                                <input type="checkbox" name="" id="5">
+                            </label>
+                            <p class="text">Change Password</p>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">SAVE</button>
                   </div>
                 </form>
-              </div> 
-            </div>   
+            </div>
         </section>
         <div class="advantages container-fluid">
-          <div class="advantages-content">
-            <div class="advantages-info">
-              <img class="advantages-img" src="/img/complete.svg" alt="">
-              <p class="advantages-text">Duties and Taxes Guaranteed</p>
-            </div>
-            <div class="advantages-info">
-              <img class="advantages-img" src="/img/complete.svg" alt="">
-              <p class="advantages-text">Free Express Shipping</p>
-            </div>
-            <div class="advantages-info">
-              <img class="advantages-img" src="/img/complete.svg" alt="">
-              <p class="advantages-text">Customer Love</p>
-            </div>
-            <div class="advantages-info">
+            <div class="advantages-content">
+              <div class="advantages-info">
                 <img class="advantages-img" src="/img/complete.svg" alt="">
-                <p class="advantages-text">Easy Returns</p>
+                <p class="advantages-text">Duties and Taxes Guaranteed</p>
+              </div>
+              <div class="advantages-info">
+                <img class="advantages-img" src="/img/complete.svg" alt="">
+                <p class="advantages-text">Free Express Shipping</p>
+              </div>
+              <div class="advantages-info">
+                <img class="advantages-img" src="/img/complete.svg" alt="">
+                <p class="advantages-text">Customer Love</p>
               </div>
               <div class="advantages-info">
                   <img class="advantages-img" src="/img/complete.svg" alt="">
-                  <p class="advantages-text">Secure Payment</p>
-              </div>
-          </div>
-      </div>
+                  <p class="advantages-text">Easy Returns</p>
+                </div>
+                <div class="advantages-info">
+                    <img class="advantages-img" src="/img/complete.svg" alt="">
+                    <p class="advantages-text">Secure Payment</p>
+                </div>
+            </div>
+        </div>
       </main>
       <footer class="footer">
         <div class="footer-content container-fluid">
@@ -235,8 +197,8 @@
                     <div class="join-info">
                       <p class="info-heading">JOIN US</p>
                       <div class="info-links">
-                        <label for="email">
-                          <input autocomplete="on" class="email" placeholder="Email Address" name="email" type="email" id="email">
+                        <label>
+                          <input class="email" placeholder="Email Address" name="email" type="email" id="emai">
                         </label>
                         <button class="footer-btn">SUBSCRIBE!</button>
                       </div>

@@ -162,7 +162,7 @@ header {
         }    
     }
 }
-.main {
+main {
     .link {
         display: flex;
         height: 36px;
@@ -220,8 +220,8 @@ header {
             color: white;
         }
     }
-    .address-section {
-        height: 1039px;
+    .account-section {
+        height: 716px;
         display: flex;
         margin-top: 17px;
         justify-content: center;
@@ -236,7 +236,7 @@ header {
                 flex-direction: column;
                 width: 275px;
                 height: 264px;
-                .address-link {
+                .account-link {
                     color: #000;
                     font-family: "Oswald", sans-serif;
                     font-size: 19px;
@@ -265,72 +265,117 @@ header {
                     line-height: 24px;
                 }
             }
-        }  
-        .address-regist {
-            form {
-                .contact-info {
+                .regist-form {
                     display: flex;
+                    width: 610px;
                     flex-direction: column;
-                    gap: 50px;
-                    h4 {
-                        font-family: "Oswald", sans-serif;
-                        font-size: 24px;
-                        font-style: normal;
-                        font-weight: 400;
-                    }
-                    .contact-regist {
+                    gap: 57px;
+                    .personal-info {
                         display: flex;
                         flex-direction: column;
-                        gap: 15px;
-                        margin-top: 28px;
-                        .field {
+                        gap: 20px;
+                        .personal-heading {
+                            margin: 0;
+                            font-family: "Oswald", sans-serif;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 68px;
+                        }
+                        .regist-password {
                             display: flex;
                             justify-content: space-between;
-                            width: 550px;
-                            .street-address__inputs {
+                            .password {
                                 display: flex;
                                 flex-direction: column;
-                                gap: 10px;
-                                width: 392px;
-                            }
-                            label {
-                                .country-selection {
-                                    width: 392px;
+                                justify-content: space-around;
+                                height: 80px;
+                                input {
+                                    width: 443px;
                                     height: 44px;
-                                    border: 1px solid var(--Divider, #C4C4C4);
-                                    color: var(--Gray-1, #828282);
+                                    padding-left: 16px;
+                                    color: var(--Black-2, #3F3F3F);
                                     font-family: "Roboto", sans-serif;
                                     font-size: 16px;
                                     font-style: normal;
-                                    font-weight: 400;
+                                    font-weight: 600;
                                     line-height: 20px;
                                 }
                             }
                             p {
-                                width: 127px;
+                                display: flex;
+                                align-items: start;
+                                margin: 0;
                                 color: #3F3F3F;
                                 font-family: "Roboto", sans-serif;
                                 font-size: 16px;
                                 font-style: normal;
-                                line-height: 20px; 
                                 font-weight: 400;
+                                line-height: 20px;
                                 u {
+                                    text-decoration: none;
+                                    padding-left: 10px;
                                     color: red;
                                 }
                             }
-                            .input {
+                        }
+                        .name {
+                            display: flex;
+                            justify-content: space-between;
+                            height: 44px;
+                            p {
+                                display: flex;
+                                align-items: start;
+                                color: #3F3F3F;
+                                font-family: "Roboto", sans-serif;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 20px;
+                                u {
+                                    text-decoration: none;
+                                    padding-left: 10px;
+                                    color: red;
+                                }
+                            }
+                            input {
                                 width: 392px;
                                 height: 44px;
-                                padding-left: 10px;
-                                border: 1px solid var(--Divider, #C4C4C4);
+                                padding-left: 16px;
+                                color: var(--Black-2, #3F3F3F);
+                                font-family: "Roboto", sans-serif;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 20px;
+                            }
+                        }
+                        .change {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 17px;
+                            .check {
+                                display: flex;
+                                align-items: center;
+                                height: 15px;
+                                gap: 10px;
+                            p {
+                                margin: 0;
+                                color: #828282;
+                                font-family: "Roboto", sans-serif;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
                             }
                         }
                     }
-                    .form-btn {
+                    .btn {
                         width: 140px;
                         height: 50px;
                         background-color: #000;
                         color: white;
+                        border-radius: 0;
+                        margin-top: 57px;
                     }
                 }
             }

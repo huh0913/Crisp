@@ -173,7 +173,7 @@ header {
     .first-page {
         display: flex;
         width: 1640px;
-        height: 800px;
+        height: 750px;
         margin-right: auto;
         margin-left: auto;
         flex-wrap: wrap;
@@ -222,25 +222,34 @@ header {
                 }
             }
         }
-        .karusel-buttons {
+    }
+    .karusel-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .karusel-items {
+            width: 125px;
             display: flex;
-            justify-content: space-between;
-            .karusel-items {
-                width: 125px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                row-gap: 10px;
-                .karusel-button {
-                    width: 25px;
-                    height: 25px;
-                }
-                .karusel-button:hover {
-                    width: 32px;
-                    height: 32px;
-                    background-color: black;
-                    transition: all 1s;
-                }
+            align-items: center;
+            gap: 5px;
+            .karusel-button {
+                width: 20px;
+                height: 20px;
+                border: 1px solid #4F4F4F;
+                background-color: transparent;
+            }
+            .karusel-button:hover {
+                width: 22px;
+                height: 22px;
+                background-color: black;
+                transition: all 1s;
+            }
+        }
+        .karusel-radio {
+            .item {
+                height: 50px;
+                width: 50px;
+                background-color: black;
             }
         }
     }
@@ -531,18 +540,30 @@ header {
         display: flex;
         margin-top: 60px;
         justify-content: center;
+        .card-menu {
+            .top-cards__heading-content {
+                display: flex;
+                justify-content: space-between;
+                .top-cards__heading {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+                .top-cards__btn {
+                    button {
+                        width: 40px;
+                        height: 40px;
+                        border: none;
+                        background-image: url(/img/gray-arrowButton.svg);
+                    }
+                    .second-button {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
         .top__card-list {
             display: flex;
             margin-top: 30px;
-        }
-        .top-cards__heading-content {
-            display: flex;
-            justify-content: space-between;
-            .top-cards__heading {
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 400;
-            }
         }
         .btm-cards__heading-content {
             display: flex;
@@ -554,10 +575,14 @@ header {
                 font-weight: 400;
             }
             .btm-cards__btn {
-                .karusel-change__btn {
+                button {
                     width: 40px;
                     height: 40px;
-                    border-color: #828282;
+                    border: none;
+                    background-image: url(/img/gray-arrowButton.svg);
+                }
+                .second-button {
+                    transform: rotate(180deg);
                 }
             }
         }
@@ -611,6 +636,7 @@ header {
             margin-top: 34px;
         }
     }
+}
     .second-offer {
         height: 363px;
         margin-top: 120px;

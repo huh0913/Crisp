@@ -225,7 +225,7 @@ header .header-content .navbar .header-options .popup-link {
   color: white;
 }
 
-.main .link {
+main .link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,7 +238,7 @@ header .header-content .navbar .header-options .popup-link {
           align-items: center;
   margin-top: 13px;
 }
-.main .link .link-text {
+main .link .link-text {
   color: #828282;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -246,7 +246,7 @@ header .header-content .navbar .header-options .popup-link {
   font-style: normal;
   margin: 0;
 }
-.main .main-h1 {
+main .main-h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,14 +259,14 @@ header .header-content .navbar .header-options .popup-link {
   margin-top: 13px;
   height: 90px;
 }
-.main .main-h1 .h1 {
+main .main-h1 .h1 {
   font-family: "Oswald", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
   line-height: 68px;
 }
-.main .contact-us {
+main .contact-us {
   position: fixed;
   right: 0;
   top: 25%;
@@ -293,7 +293,7 @@ header .header-content .navbar .header-options .popup-link {
   font-weight: 500;
   text-transform: uppercase;
 }
-.main .contact-us .contact-link {
+main .contact-us .contact-link {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -309,8 +309,8 @@ header .header-content .navbar .header-options .popup-link {
   text-decoration: none;
   color: white;
 }
-.main .address-section {
-  height: 1039px;
+main .account-section {
+  height: 716px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,7 +320,7 @@ header .header-content .navbar .header-options .popup-link {
           justify-content: center;
   border: 1px solid var(--Divider, #C4C4C4);
 }
-.main .address-section .info {
+main .account-section .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,7 +328,7 @@ header .header-content .navbar .header-options .popup-link {
   padding-top: 73px;
   gap: 108px;
 }
-.main .address-section .info .links {
+main .account-section .info .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,7 +339,7 @@ header .header-content .navbar .header-options .popup-link {
   width: 275px;
   height: 264px;
 }
-.main .address-section .info .links .address-link {
+main .account-section .info .links .account-link {
   color: #000;
   font-family: "Oswald", sans-serif;
   font-size: 19px;
@@ -347,7 +347,7 @@ header .header-content .navbar .header-options .popup-link {
   font-weight: 500;
   line-height: 24px;
 }
-.main .address-section .info .links a {
+main .account-section .info .links a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,7 +363,7 @@ header .header-content .navbar .header-options .popup-link {
   font-weight: 200;
   line-height: 23px;
 }
-.main .address-section .info .links a:hover {
+main .account-section .info .links a:hover {
   color: #000;
   font-family: "Oswald", sans-serif;
   font-size: 19px;
@@ -371,7 +371,18 @@ header .header-content .navbar .header-options .popup-link {
   font-weight: 500;
   line-height: 24px;
 }
-.main .address-section .address-regist form .contact-info {
+main .account-section .info .regist-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 610px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 57px;
+}
+main .account-section .info .regist-form .personal-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,35 +390,25 @@ header .header-content .navbar .header-options .popup-link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 50px;
+  gap: 20px;
 }
-.main .address-section .address-regist form .contact-info h4 {
+main .account-section .info .regist-form .personal-info .personal-heading {
+  margin: 0;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
+  line-height: 68px;
 }
-.main .address-section .address-regist form .contact-info .contact-regist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 15px;
-  margin-top: 28px;
-}
-.main .address-section .address-regist form .contact-info .contact-regist .field {
+main .account-section .info .regist-form .personal-info .regist-password {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 550px;
 }
-.main .address-section .address-regist form .contact-info .contact-regist .field .street-address__inputs {
+main .account-section .info .regist-form .personal-info .regist-password .password {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,48 +416,120 @@ header .header-content .navbar .header-options .popup-link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
-  width: 392px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 80px;
 }
-.main .address-section .address-regist form .contact-info .contact-regist .field label .country-selection {
-  width: 392px;
+main .account-section .info .regist-form .personal-info .regist-password .password input {
+  width: 443px;
   height: 44px;
-  border: 1px solid var(--Divider, #C4C4C4);
-  color: var(--Gray-1, #828282);
+  padding-left: 16px;
+  color: var(--Black-2, #3F3F3F);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 20px;
 }
-.main .address-section .address-regist form .contact-info .contact-regist .field p {
-  width: 127px;
+main .account-section .info .regist-form .personal-info .regist-password p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin: 0;
   color: #3F3F3F;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
-  line-height: 20px;
   font-weight: 400;
+  line-height: 20px;
 }
-.main .address-section .address-regist form .contact-info .contact-regist .field p u {
+main .account-section .info .regist-form .personal-info .regist-password p u {
+  text-decoration: none;
+  padding-left: 10px;
   color: red;
 }
-.main .address-section .address-regist form .contact-info .contact-regist .field .input {
+main .account-section .info .regist-form .personal-info .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 44px;
+}
+main .account-section .info .regist-form .personal-info .name p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  color: #3F3F3F;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+main .account-section .info .regist-form .personal-info .name p u {
+  text-decoration: none;
+  padding-left: 10px;
+  color: red;
+}
+main .account-section .info .regist-form .personal-info .name input {
   width: 392px;
   height: 44px;
-  padding-left: 10px;
-  border: 1px solid var(--Divider, #C4C4C4);
+  padding-left: 16px;
+  color: var(--Black-2, #3F3F3F);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
 }
-.main .address-section .address-regist form .contact-info .form-btn {
+main .account-section .info .regist-form .personal-info .change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 17px;
+}
+main .account-section .info .regist-form .personal-info .change .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15px;
+  gap: 10px;
+}
+main .account-section .info .regist-form .personal-info .change .check p {
+  margin: 0;
+  color: #828282;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+main .account-section .info .regist-form .personal-info .btn {
   width: 140px;
   height: 50px;
   background-color: #000;
   color: white;
+  border-radius: 0;
+  margin-top: 57px;
 }
-.main .advantages {
+main .advantages {
   margin-top: 183px;
 }
-.main .advantages .advantages-content {
+main .advantages .advantages-content {
   width: 1515px;
   height: 100px;
   display: -webkit-box;
@@ -471,7 +544,7 @@ header .header-content .navbar .header-options .popup-link {
   gap: 150px;
   margin-left: 210px;
 }
-.main .advantages .advantages-content .advantages-info {
+main .advantages .advantages-content .advantages-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,11 +554,11 @@ header .header-content .navbar .header-options .popup-link {
       -ms-flex-align: center;
           align-items: center;
 }
-.main .advantages .advantages-content .advantages-info .advantages-img {
+main .advantages .advantages-content .advantages-info .advantages-img {
   width: 30px;
   height: 30px;
 }
-.main .advantages .advantages-content .advantages-info .advantages-text {
+main .advantages .advantages-content .advantages-info .advantages-text {
   font-size: 14px;
   width: 190px;
   margin-bottom: 0;

@@ -225,7 +225,7 @@ header .header-content .navbar .header-options .popup-link {
   color: white;
 }
 
-.main .link {
+main .link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,7 +238,7 @@ header .header-content .navbar .header-options .popup-link {
           align-items: center;
   margin-top: 13px;
 }
-.main .link .link-text {
+main .link .link-text {
   color: #828282;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -246,7 +246,7 @@ header .header-content .navbar .header-options .popup-link {
   font-style: normal;
   margin: 0;
 }
-.main .main-h1 {
+main .main-h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,14 +259,14 @@ header .header-content .navbar .header-options .popup-link {
   margin-top: 13px;
   height: 90px;
 }
-.main .main-h1 .h1 {
+main .main-h1 .h1 {
   font-family: "Oswald", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
   line-height: 68px;
 }
-.main .contact-us {
+main .contact-us {
   position: fixed;
   right: 0;
   top: 25%;
@@ -293,7 +293,7 @@ header .header-content .navbar .header-options .popup-link {
   font-weight: 500;
   text-transform: uppercase;
 }
-.main .contact-us .contact-link {
+main .contact-us .contact-link {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -309,7 +309,7 @@ header .header-content .navbar .header-options .popup-link {
   text-decoration: none;
   color: white;
 }
-.main .address-section {
+main section {
   height: 1039px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,7 +320,7 @@ header .header-content .navbar .header-options .popup-link {
           justify-content: center;
   border: 1px solid var(--Divider, #C4C4C4);
 }
-.main .address-section .info {
+main section .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,7 +328,7 @@ header .header-content .navbar .header-options .popup-link {
   padding-top: 73px;
   gap: 108px;
 }
-.main .address-section .info .links {
+main section .info .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,7 +339,7 @@ header .header-content .navbar .header-options .popup-link {
   width: 275px;
   height: 264px;
 }
-.main .address-section .info .links .address-link {
+main section .info .links .address-link {
   color: #000;
   font-family: "Oswald", sans-serif;
   font-size: 19px;
@@ -347,7 +347,7 @@ header .header-content .navbar .header-options .popup-link {
   font-weight: 500;
   line-height: 24px;
 }
-.main .address-section .info .links a {
+main section .info .links a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,7 +363,7 @@ header .header-content .navbar .header-options .popup-link {
   font-weight: 200;
   line-height: 23px;
 }
-.main .address-section .info .links a:hover {
+main section .info .links a:hover {
   color: #000;
   font-family: "Oswald", sans-serif;
   font-size: 19px;
@@ -371,7 +371,7 @@ header .header-content .navbar .header-options .popup-link {
   font-weight: 500;
   line-height: 24px;
 }
-.main .address-section .address-regist form .contact-info {
+main section .info .card-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,84 +379,108 @@ header .header-content .navbar .header-options .popup-link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 50px;
+  gap: 30px;
 }
-.main .address-section .address-regist form .contact-info h4 {
+main section .info .card-list .cardslist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 660px;
+  gap: 30px;
+}
+main section .info .card-list .cardslist .mini-card {
+  width: 200px;
+}
+main section .info .card-list .cardslist .mini-card form .card-content .img-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+}
+main section .info .card-list .cardslist .mini-card form .card-content .img-content .card-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+}
+main section .info .card-list .cardslist .mini-card form .card-content .img-content .card-btns button {
+  border: none;
+}
+main section .info .card-list .cardslist .mini-card form .card-content .text-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+  margin-top: 7px;
+}
+main section .info .card-list .cardslist .mini-card form .card-content .text-content h5 {
+  margin-bottom: 0;
   font-family: "Oswald", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  line-height: 23px;
 }
-.main .address-section .address-regist form .contact-info .contact-regist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 15px;
-  margin-top: 28px;
-}
-.main .address-section .address-regist form .contact-info .contact-regist .field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 550px;
-}
-.main .address-section .address-regist form .contact-info .contact-regist .field .street-address__inputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
-  width: 392px;
-}
-.main .address-section .address-regist form .contact-info .contact-regist .field label .country-selection {
-  width: 392px;
-  height: 44px;
-  border: 1px solid var(--Divider, #C4C4C4);
-  color: var(--Gray-1, #828282);
+main section .info .card-list .cardslist .mini-card form .card-content .text-content p {
+  margin-bottom: 0;
+  color: #828282;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
 }
-.main .address-section .address-regist form .contact-info .contact-regist .field p {
-  width: 127px;
-  color: #3F3F3F;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  line-height: 20px;
-  font-weight: 400;
+main section .info .card-list .cardslist .mini-card form .card-content .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9.92px;
+  margin-top: 17px;
 }
-.main .address-section .address-regist form .contact-info .contact-regist .field p u {
-  color: red;
-}
-.main .address-section .address-regist form .contact-info .contact-regist .field .input {
-  width: 392px;
-  height: 44px;
-  padding-left: 10px;
+main section .info .card-list .cardslist .mini-card form .card-content .btns label input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
   border: 1px solid var(--Divider, #C4C4C4);
 }
-.main .address-section .address-regist form .contact-info .form-btn {
-  width: 140px;
-  height: 50px;
+main section .info .card-list .cardslist .mini-card form .card-content .btns button {
+  width: 117px;
+  height: 40px;
   background-color: #000;
   color: white;
 }
-.main .advantages {
+main section .info .card-list .section-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-top: 58px;
+}
+main section .info .card-list .section-btns button {
+  width: 170px;
+  height: 40px;
+  border: 1px solid #828282;
+  color: #828282;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+main .advantages {
   margin-top: 183px;
 }
-.main .advantages .advantages-content {
+main .advantages .advantages-content {
   width: 1515px;
   height: 100px;
   display: -webkit-box;
@@ -471,7 +495,7 @@ header .header-content .navbar .header-options .popup-link {
   gap: 150px;
   margin-left: 210px;
 }
-.main .advantages .advantages-content .advantages-info {
+main .advantages .advantages-content .advantages-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,11 +505,11 @@ header .header-content .navbar .header-options .popup-link {
       -ms-flex-align: center;
           align-items: center;
 }
-.main .advantages .advantages-content .advantages-info .advantages-img {
+main .advantages .advantages-content .advantages-info .advantages-img {
   width: 30px;
   height: 30px;
 }
-.main .advantages .advantages-content .advantages-info .advantages-text {
+main .advantages .advantages-content .advantages-info .advantages-text {
   font-size: 14px;
   width: 190px;
   margin-bottom: 0;
