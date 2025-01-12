@@ -18,7 +18,7 @@ header {
     justify-content: center;
     background-color: rgb(0, 0, 0); 
     .header-content {
-        width: 100%;
+        width: 1920px;
         height: 100%;
         display: flex;
         align-items: center;
@@ -165,7 +165,7 @@ header {
     font-family: "Oswald", sans-serif;
     width: auto;
     .karusel {
-        width: 1878px;
+        width: 100%;
         height: 800px;
         background-image: url(/img/image.png);
         margin-top: 30px;
@@ -824,5 +824,89 @@ header {
         color: white;
         margin-bottom: 0;
     }
+    }
+}
+
+@media (max-width: 1919px) {
+    html {
+        width: 1599px;
+    }
+}
+
+@media (max-width: 1599px) { 
+    html {
+        width: 1439px;
+    }
+}
+
+@media (max-width: 1439px) {
+    html {
+        width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        width: 640px;
+    }
+}
+
+@media (max-width: 640px) {
+    html {
+        width: 480px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        width: 320px;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        width: 100%;
+        .header {
+            .header-content {
+                .navbar {
+                    .nav-logo {
+                        display: grid;
+                        gap: 10px;
+                    }
+                    .header-links {
+                        display: none;
+                    }
+                }
+            }
+        }
+        main {
+            .karusel {
+                display: flex;
+                flex-direction: column;
+                .fist-page {
+                    width: 320px;
+                    height: 492px;
+                    .main-h1 {
+                        width: 292px;
+                        height: 105px;
+                        border-top: none;
+                        border-right: none;
+                        h1 {
+                            width: 292px;
+                            height: 105px;
+                            font-size: 32px;
+                        }
+                    } 
+                    .firstPage-img_content {
+                        width: 205;
+                        height: 207px;
+                        img { 
+                            max-width: 100%; 
+                            height: auto; 
+                        }
+                    }
+                }
+            }
+        }
     }
 }

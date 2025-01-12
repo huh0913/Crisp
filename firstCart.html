@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/firstCart.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header class="header container-fluid">
+        <div class="header-content">
+          <nav class="navbar">
+            <div class="nav-logo">
+              <a href="#"><img class="logo" src="/img/Logo.svg" alt="123"></a>
+              <p class="beta">BETA v0.9.1</p>
+            </div>
+              <ul class="header-links">
+                <div class="div-link">
+                  <li class="header-item"><a class="header-link" href="/index.html">HOME</a></li>
+                </div>
+                <div class="div-link">
+                  <li class="header-item"><a class="header-link" href="/catalog.html">SHOP</a></li>
+                </div>
+                <div class="div-link">
+                  <li class="header-item"><a class="header-link" href="/article.html">BLOG</a></li>
+                </div>
+                <div class="div-link">
+                  <li class="header-item"><a class="header-link" href="#">SALE</a></li>
+                </div>
+                <div class="contact">
+                  <li class="header-item"><a class="header-link" href="#">CONTACT US</a></li>
+                </div>
+                <div class="search">
+                  <li class="header-item"><a class="header-link" href="#"><img class="search-text" src="./img/Search.svg" alt="">SEARCH</a></li>
+                </div>
+              </ul>
+              <div class="header-options">
+                <div class="acc-links">
+                  <a class="popup-link" href="#">SIGN IN</a>
+                  <a class="popup-link" href="/create-account.html">CREATE  AN  ACCOUNT</a>
+                </div>
+                <a class="like" href="#"><img src="/img/Like.svg" alt="1"></a>
+                <a class="shop-icon" href="#"><img src="/img/Shop.svg" alt="2"></a>
+                <a class="shop-link" href="#">Shopping Cart <br> 0,00 EUR</a>
+              </div>
+            </nav>
+            </div>
+      </header>
+      <main>
+        <div class="link">
+            <p class="link-text">Home / Create New Customer Account</p>
+        </div>
+        <div class="main-h1 container-sm">
+          <h1 class="h1">Add New Address</h1>
+        </div>
+        <div class="contact-us">
+            <a href="#" class="contact-link">contact us</a>
+        </div>
+        <section class="basket-section container-sm">
+            <div class="add-card" id="add-card__div">
+                <ul class="columns-heading">
+                    <li class="product">PRODUCT</li>
+                    <li class="price">PRICE</li>
+                    <li class="size">SIZE</li>
+                    <li class="quanity">QUANITY</li>
+                    <li class="total">TOTAL</li>
+                </ul>
+                <div class="add-menu" id="add-menu">
+                    <a href="/catalog.html" class="add-product" id="add-link">ADD PRODUCT</a>
+                </div>
+                <div class="basket-btns">
+                    <button id="basket__btn1" class="btn-one"><a href="/catalog.html">CONTINUE SHOPPING</a></button>
+                    <button type="reset" id="basket__btn2" class="btn-two">CLEAR SHOPPING CART</button>
+                </div>
+            </div>
+            <div class="cart-shipping">
+                <div class="shippingAndTax">
+                    <h3>Apply Discount Code</h3>
+                    <div class="discountCode">
+                        <label for="discount"><input placeholder="Enter discount code" type="text" name="" id="discount">APPLY DISCOUNT</label>
+                    </div>
+                    <div class="estimate">
+                        <div class="estimate-heading">
+                            <h3>Estimate Shipping and Tax</h3>
+                            <button>&mdash;</button>
+                        </div>
+                        <div class="estimate-content">
+                            <p>Enter your destination to get a shipping estimate.</p>
+                            <div class="address">
+                                <label for="country">
+                                    <p>Country <u class="text-decoration-none">*</u></p>
+                                    <select name="country" autocomplete="on" id="country" class="country-selection" required>
+                                      <option value="engineer" selected>USA</option>
+                                      <option value="scientist">Russia</option>
+                                      <option value="psychologist">China</option>
+                                      <option value="other">Other</option>
+                                    </select>
+                                  </label>
+                                <label for="state">
+                                    <p>State/Province <u class="text-decoration-none">*</u></p>
+                                    <select name="state" autocomplete="on" id="state " class="country-selection" required>
+                                      <option value="engineer" selected>USA</option>
+                                      <option value="scientist">Russia</option>
+                                      <option value="psychologist">China</option>
+                                      <option value="other">Other</option>
+                                    </select>
+                                  </label>
+                                  <label for="zip">Zip/Postal Code<input type="text"></label>
+                            </div>
+                            <fieldset>
+                            <div class="price-selection">
+                                <div class="flat">
+                                  <p>Flat Rate</p>
+                                  <label for="flat" class="label">
+                                  <input type="radio" name="price" id="flat" checked/>
+                                  Fixed 5.00 EUR
+                                </label>
+                                </div>
+                                <div class="best">
+                                  <p>Best Way</p>
+                                  <label for="best" class="label">
+                                    <input type="radio" name="price" id="best">
+                                    Table Rate 10.00 EUR
+                                  </label>
+                                </div>
+                              </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                  <div class="total-content">
+                    <div class="calculation">
+                      <p>Subtotal</p>
+                      <p id="product-price">0</p>
+                    </div>
+                    <div class="calculation">
+                      <p class="tax">Tax</p>
+                      <p class="tax">0.00</p>
+                    </div>
+                    <div class="order-total">
+                      <p class="order">Order Total</p>
+                      <p class="order" id="end-price">0</p>
+                    </div>
+                  </div>
+                  <p class="prompt">CHECK OUT WITH MULTIPLE ADDRESSES</p>
+                  <button type="submit"><a href="#">PROCEED TO CHECKOUT</a></button>
+                </div>
+            </div>
+        </section>
+        <div class="advantages container-fluid">
+          <div class="advantages-content">
+            <div class="advantages-info">
+              <img class="advantages-img" src="/img/complete.svg" alt="">
+              <p class="advantages-text">Duties and Taxes Guaranteed</p>
+            </div>
+            <div class="advantages-info">
+              <img class="advantages-img" src="/img/complete.svg" alt="">
+              <p class="advantages-text">Free Express Shipping</p>
+            </div>
+            <div class="advantages-info">
+              <img class="advantages-img" src="/img/complete.svg" alt="">
+              <p class="advantages-text">Customer Love</p>
+            </div>
+            <div class="advantages-info">
+                <img class="advantages-img" src="/img/complete.svg" alt="">
+                <p class="advantages-text">Easy Returns</p>
+              </div>
+              <div class="advantages-info">
+                  <img class="advantages-img" src="/img/complete.svg" alt="">
+                  <p class="advantages-text">Secure Payment</p>
+              </div>
+          </div>
+      </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-content container-fluid">
+                    <div class="footer-logo">
+                      <a href="#"><img class="logo" src="/img/Logo.svg" alt="123"></a>
+                    </div>
+                    <div class="footer-info">
+                      <p class="info-heading">FEATURES</p>
+                      <div class="info-links">
+                        <a class="footer-link" href="#">MEN</a>
+                        <a class="footer-link" href="#">WOMEN</a>
+                        <a class="footer-link" href="#">BOYS</a>
+                        <a class="footer-link" href="#">GIRLS</a>
+                        <a class="footer-link" href="#">NEW ARRIVALS</a>
+                        <a class="footer-link" href="#">SHOES</a>
+                        <a class="footer-link" href="#">CLOTHES</a>
+                        <a class="footer-link" href="#">ACCESSORIES</a>
+                      </div>
+                    </div>
+                    <div class="footer-info">
+                      <p class="info-heading">MENU</p>
+                      <div class="info-links">
+                        <a class="footer-link" href="#">ABOUT US</a>
+                        <a class="footer-link" href="#">CONTACT US</a>
+                        <a class="footer-link" href="#">MY ACCOUNT</a>
+                        <a class="footer-link" href="#">ORDERS HISTORY</a>
+                        <a class="footer-link" href="#">MY WISHLIST</a>
+                        <a class="footer-link" href="#">BLOG</a>
+                        <a class="footer-link" href="#">LOGIN</a>
+                      </div>
+                    </div>
+                    <div class="footer-info">
+                      <p class="info-heading">CONTACT US</p>
+                      <div class="contact-links">
+                        <div class="info">
+                          <p class="footer-text">ADRESS:</p>
+                          <a class="footer-link" href="#">123 STREET NAME, CITY, ENGLAND</a>
+                        </div>
+                        <div class="info">
+                          <p class="footer-text">PHONE:</p>
+                          <a class="footer-link" href="#">+998 (90)099-51-33</a>
+                        </div>
+                        <div class="info">
+                          <p class="footer-text">EMAIL:</p>
+                          <a class="footer-link" href="#">krylovdavid14@gmail.com</a>
+                        </div>
+                        <div class="info">
+                          <p class="footer-text">WORKING DAYS/HOURS:</p>
+                          <a class="footer-link" href="#">MON_SUN / 9:00AM - 8:00AM</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="footer-info">
+                      <p class="info-heading">FOLLOW US</p>
+                      <div class="info-links">
+                        <div class="links">
+                          <a class="footer-link" href="#"><img src="/img/facebook (3).svg" alt=""></a>
+                          <a class="footer-link" href="#">FACEBOOK</a>
+                        </div>
+                        <div class="links">
+                          <a class="footer-link" href="#"><img src="/img/twitter.svg" alt=""></a>
+                          <a class="footer-link" href="#">TWITER</a>
+                        </div>
+                        <div class="links">
+                          <a class="footer-link" href="#"><img src="/img/instagram-photo-camera-symbol.svg" alt=""></a>
+                          <a class="footer-link" href="#">INSTAGRAM</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="join-info">
+                      <p class="info-heading">JOIN US</p>
+                      <div class="info-links">
+                        <label for="email">
+                          <input autocomplete="on" class="email" placeholder="Email Address" name="email" type="email" id="email">
+                        </label>
+                        <button class="footer-btn">SUBSCRIBE!</button>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+</body>
+</html>
